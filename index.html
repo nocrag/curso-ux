@@ -18,10 +18,10 @@
             <img id="header-logo" src="assets/logo.svg" alt="">
         </div>
         <ul>
-            <li>HOME</li>
-            <li>WHO</li>
-            <li>WHY</li>
-            <li>CONTACT</li>
+            <li onclick="goTo('home')">HOME</li>
+            <li onclick="goTo('who')">WHO</li>
+            <li onclick="goTo('why')">WHY</li>
+            <li onclick="goTo('contact')">CONTACT</li>
         </ul>
         <div class="search">
             <input type="text" placeholder="Search">
@@ -33,7 +33,7 @@
             <h1>Be Awesome</h1>
             <h2>Take the Wave</h2>
             <p>we have the best surfboards</p>
-            <button>see more</button>
+            <button onclick="goTo('home')">see more</button>
         </div>
         <div class="home-image">
             <img src="assets/image.svg" alt="">
@@ -50,5 +50,66 @@
             <img src="assets/4.jpg" alt="">
         </div>
     </section>
+    <section id="why">
+        <h1>WHY</h1>
+        <h2>THE BEST SURFBOARDS DON'T COME EASY</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin orci massa, blandit non elementum eget, rhoncus in magna. Duis arcu ipsum, viverra sit amet euismod eu, blandit ac felis. Vestibulum pretium sapien dolor, a sagittis risus dictum nec. Vestibulum tincidunt pellentesque massa vel pulvinar. Aenean non convallis enim. Aenean mollis ut orci maximus lobortis. Nam iaculis aliquam urna, consequat semper sem tincidunt quis. Quisque sollicitudin condimentum augue, eget egestas turpis commodo vitae. Ut vel ex nulla. Aenean mattis auctor leo, in elementum lectus aliquet et. Aliquam laoreet interdum tellus, id porta tellus cursus ac. Aliquam erat volutpat. Cras non justo sit amet ex sodales placerat non sit amet elit.
+            </br>
+            </br>
+            Donec scelerisque, justo vitae varius lobortis, ipsum augue pellentesque lacus, et consectetur massa elit ut sapien. Morbi nisl urna, cursus in gravida non, vehicula ac lacus. Mauris eu elit facilisis, suscipit neque sodales, tempor felis. Morbi suscipit arcu et commodo sodales. Nunc ante urna, imperdiet eget lacus ut, ultrices fermentum justo. Donec bibendum elit nec odio accumsan, quis porttitor justo interdum. Quisque turpis nisl, sollicitudin nec quam id, ultrices commodo purus. Vestibulum rhoncus ac odio at ornare. Integer porttitor rutrum ipsum, ut congue mi tempus varius. Maecenas eget metus eget nisl euismod molestie sed nec ex. Curabitur lacus augue, fermentum eget lacus sed, dapibus congue lorem.
+            </br>
+            </br>
+            Sed orci turpis, mollis in quam quis, tempus scelerisque sapien. In commodo urna vitae semper rutrum. Nullam mollis lorem id tempor egestas. Phasellus euismod turpis vel odio finibus, a sollicitudin odio suscipit. Etiam viverra pharetra eros, sit amet volutpat risus pharetra nec. Nulla facilisi.
+        </p>
+    </section>
+    <section id="contact">
+        <div class="contact-content">
+            <h1>CONTACT</h1>
+            <h2>GET IN TOUCH, WE CANMAKE YOUR DREAM SURFBOARD</h2>
+            <label for="name">Name</label>
+            <input id="name" type="text">
+            <label for="email">E-mail</label>
+            <input id="email" type="text">
+            <label for="phone">Phone</label>
+            <input id="phone" type="text">
+            <button class="contact-send">SEND</button>
+        </div>
+        <div class="contact-image">
+            <div class="content">
+                <img src="assets/5.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-logo">
+            <img src="assets/logo-footer.svg" alt="">
+        </div>
+        <div class="footer-social">
+            <h1>Social Media</h1>
+            <div class="footer-social-content">
+                <img src="assets/icon-facebook.svg" alt="">
+                <a href="#">facebook.com/wavesurfboards</a>
+                <img src="assets/icon-instagram.svg" alt="">
+                <a href="#">@wavesurfboards</a>
+                <img src="assets/icon-twitter.svg" alt="">
+                <a href="#">twitter.com/wavesurfboards</a>
+            </div>
+        </div>
+        <div class="footer-info">
+            <h1>Info</h1>
+            <p>
+                74 Ocala Street </br>
+                Orlando</br>
+                Florida</br>
+                <b>32805</b></br>
+                </br>
+                Phone</br>
+                <b>(407)404-9640</b></br>
+                Mobile</br>
+                <b>(407)953-4434</b></br>
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

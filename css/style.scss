@@ -6,6 +6,7 @@ $font1: Basic-sans;
 $font2: 'BenchNine', sans-serif;
 
 $transition: all 0.3s ease-in-out;
+$box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
 * {
     font-family: $font1;
@@ -113,20 +114,20 @@ header {
         flex: 1;
         text-transform: uppercase;
         h1 {
-            margin: 10px;
+            margin: 1px;
             font-size: 9vw;
             width: auto;
             font-weight: 900;
             line-height: 90px;
         }
         h2 {
-            margin: 0;
+            margin: 1px;
             font-size: 5vw;
             width: auto;
             font-weight: 600;
         }
         p {
-            margin: 0;
+            margin: 1px;
             margin-top: 30px;
             font-size: 3vw;
             width: auto;
@@ -157,7 +158,7 @@ header {
         position: absolute;
         right: 40px;
         img{
-            width: 600px;
+            width: 500px;
         }
     }
 }
@@ -165,11 +166,236 @@ header {
 #who {
     padding: 500px 70px 0 70px;
     background-repeat: no-repeat;
-    background-image: url(../assets/background-section);
+    background-image: url(../assets/background-section.svg);
     height: 1400px;
     background-size: cover;
     color: $grey;
-    img {
-        width: 200px;
+    h1 {
+        font-family: $font2;
+        font-size: 6vw;
+        width: auto;
+        font-weight: 700;
+        line-height: 90px;
+    }
+    h2 {
+        font-size: 3vw;
+        width: auto;
+        font-weight: 400;
+    }
+    p {
+        margin: 0;
+        margin-top: 30px;
+        font-size: 2vw;
+        width: auto;
+        font-weight: 300;
+    }
+    .who-images {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 70px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        justify-content: center; 
+        img { 
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: $box-shadow;
+            transition: $transition;
+            &:hover{
+                transform: scale(1.1)
+            }
+        }
+    }
+}
+
+#why {
+    padding: 60px 70px 0 70px;
+    height: 1050px;
+    color: white;
+    h1 {
+        font-family: $font2;
+        margin: 0;
+        font-size: 6vw;
+        width: auto;
+        font-weight: 700;
+        line-height: 60px;
+    }
+    h2 {
+        margin: 20px 0;
+        font-size: 3vw;
+        width: auto;
+        font-weight: 400;
+    }
+    p {
+        margin: 0;
+        margin-top: 30px;
+        font-size: 1.8vw;
+        width: auto;
+        font-weight: 300;
+        column-count: 2;
+        column-gap: 50px;
+    }
+}
+
+#contact {
+    padding: 300px 70px 0 70px;
+    color: $blue;
+    background-repeat: no-repeat;
+    background-image: url(../assets/contact-background.svg);
+    background-size: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    .contact-content{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-right: 80px;
+        height: 100%;
+        justify-content: flex-start;
+        h1 {
+            font-family: $font2;
+            font-size: 6vw;
+            width: auto;
+            font-weight: 700;
+            line-height: 60px;
+        }
+        h2 {
+            margin: 20px 0;
+            font-size: 1.6vw;
+            width: auto;
+            font-weight: 400;
+        }
+        label{
+            font-weight: 200;
+            font-size: 1.2vw;
+            padding-left: 20px;
+        }
+        input{
+            border: 1px solid $blue;
+            border-radius: 30px;
+            padding: 0 20px;
+            font-family: $font2;
+            height: 55px;
+            color: $blue;
+            margin-bottom: 20px;
+            &::placeholder{
+                color: $blue;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        button {
+            margin-left: auto;
+            margin-top: 30px;
+            background-color: $blue;
+            border: 1px solid white;
+            border-radius: 50px;
+            width: 200px;
+            height: 50px;
+            color: white;
+            text-transform: uppercase;
+            font-family: $font1;
+            font-weight: 700;
+            transition: $transition;
+            font-size: 20px;
+            &:hover{
+                background-color: rgba($blue, .8);
+                border-color: $blue;
+                color: rgba(white, 0.8);
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .contact-image {
+        flex: 1;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: $box-shadow;
+        position: relative;
+        &:before{
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+        .content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+
+footer {
+    padding: 30px 0;
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+    background-color: #212121;
+    & > div {
+        &:not(:first-child){
+            padding-left: 30px;
+            border-left: 1px solid white;
+        }
+    }
+    h1 {
+        font-size: 1.6vw;
+    }
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 20vw;
+        }
+    }
+    .footer-social {
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        .footer-social-content{
+            display: grid;
+            grid-row-gap: 20px;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            margin: auto 0;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            a{
+                padding-left: 30px;
+                text-decoration: none;
+                color: white;
+                font-weight: 200;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .footer-info {
+        p{
+            font-weight: 200;
+            font-size: 12px;
+        }
     }
 }
