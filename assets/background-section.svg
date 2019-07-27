@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1540.546" viewBox="0 0 1920 1540.546">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.564" y1="1.099" x2="0.564" y2="-0.274" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#248ae4"/>
+      <stop offset="1" stop-color="#28c571"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_13" data-name="Grupo 13" transform="translate(0 -834.241)">
+    <path id="União_2" data-name="União 2" d="M-8,1315.9V158.568s271.994,259.1,928.671,0,991.328,0,991.328,0V1315.9s-491.77-236.073-932.912,0c-147.065,78.7-305.725,104.927-451.975,104.921C234.666,1420.809-8,1315.9-8,1315.9Z" transform="translate(8 953.965)" fill="#fff"/>
+    <path id="União_1" data-name="União 1" d="M880.286,327.771c519.081-148.806,1031.713,0,1031.713,0V55.882s-369.2-125.735-888.287,0S-8,55.882-8,55.882V327.771S156.119,393.9,419.287,393.907C550.895,393.911,707.238,377.379,880.286,327.771Z" transform="translate(8 834.241)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

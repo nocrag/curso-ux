@@ -1,0 +1,175 @@
+$blue: #248AE4;
+$green: #28C571;
+$grey: #8F8F8F;
+
+$font1: Basic-sans;
+$font2: 'BenchNine', sans-serif;
+
+$transition: all 0.3s ease-in-out;
+
+* {
+    font-family: $font1;
+}
+
+
+body, html {
+    margin: 0;
+    width: 100vw;
+    background: linear-gradient($blue, $green);
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    svg{
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        height: 260px;
+        z-index: -1;
+        filter: drop-shadow(0 3px 6px rgba(0,0,0,0.23))
+    }
+    .logo {
+        #header-logo {
+            margin: 40px;
+        }
+    }
+    ul {
+        margin-left: auto;
+        margin-right: 100px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 70px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        align-items: center;
+        li {
+            font-family: $font2;
+            font-size: 1.5vw;
+            list-style: none;
+            color: $blue;
+            user-select: none;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: $transition;
+            &:hover {
+                border-bottom: 3px solid;
+            }
+        }
+    }
+    .search {
+        position: absolute;
+        margin-left: 65%;
+        top: 80%;
+        color: $blue;
+        display: flex;
+        align-items: center;
+        width: 400px;
+        height: 30px;
+        input {
+            flex: 1;
+            border: 1px solid $blue;
+            border-right: none;
+            border-radius: 35px 0 0 35px;
+            padding: 0 40px;
+            font-family: $font2;
+            height: 35px;
+            font-size: 1.4vw;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder {
+                color: $blue;
+            }
+        }
+        .search-icon{
+            border: 1px solid $blue;
+            border-left: none;
+            border-radius: 0 40px 40px 0;
+            display: inline-block;
+            width: 40px;
+            height: 35px;
+            padding: 0 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(../assets/icon-search.svg);
+            &:hover{
+                background-color: rgba($blue, .2);
+            }
+        }
+    }
+}
+
+#home {
+    color: white;
+    padding: 340px 70px 0 70px;
+    display: flex;
+    .home-content {
+        flex: 1;
+        text-transform: uppercase;
+        h1 {
+            margin: 10px;
+            font-size: 9vw;
+            width: auto;
+            font-weight: 900;
+            line-height: 90px;
+        }
+        h2 {
+            margin: 0;
+            font-size: 5vw;
+            width: auto;
+            font-weight: 600;
+        }
+        p {
+            margin: 0;
+            margin-top: 30px;
+            font-size: 3vw;
+            width: auto;
+            font-weight: 100;
+        }
+        button {
+            margin-top: 30px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 50px;
+            width: 200px;
+            height: 60px;
+            color: white;
+            font-family: $font1;
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: uppercase;
+            transition: $transition;
+            &:hover {
+                background-color: rgba(white, 0.3);
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .home-image{
+        position: absolute;
+        right: 40px;
+        img{
+            width: 600px;
+        }
+    }
+}
+
+#who {
+    padding: 500px 70px 0 70px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/background-section);
+    height: 1400px;
+    background-size: cover;
+    color: $grey;
+    img {
+        width: 200px;
+    }
+}

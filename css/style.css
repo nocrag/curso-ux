@@ -1,0 +1,221 @@
+* {
+  font-family: Basic-sans;
+}
+
+body, html {
+  margin: 0;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#248AE4), to(#28C571));
+  background: linear-gradient(#248AE4, #28C571);
+  overflow-x: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+}
+
+header svg {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  height: 260px;
+  z-index: -1;
+  -webkit-filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.23));
+          filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.23));
+}
+
+header .logo #header-logo {
+  margin: 40px;
+}
+
+header ul {
+  margin-left: auto;
+  margin-right: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-column-gap: 70px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul li {
+  font-family: "BenchNine", sans-serif;
+  font-size: 1.5vw;
+  list-style: none;
+  color: #248AE4;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header ul li:hover {
+  border-bottom: 3px solid;
+}
+
+header .search {
+  position: absolute;
+  margin-left: 65%;
+  top: 80%;
+  color: #248AE4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 30px;
+}
+
+header .search input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid #248AE4;
+  border-right: none;
+  border-radius: 35px 0 0 35px;
+  padding: 0 40px;
+  font-family: "BenchNine", sans-serif;
+  height: 35px;
+  font-size: 1.4vw;
+}
+
+header .search input:focus {
+  outline: none;
+}
+
+header .search input::-webkit-input-placeholder {
+  color: #248AE4;
+}
+
+header .search input:-ms-input-placeholder {
+  color: #248AE4;
+}
+
+header .search input::-ms-input-placeholder {
+  color: #248AE4;
+}
+
+header .search input::placeholder {
+  color: #248AE4;
+}
+
+header .search .search-icon {
+  border: 1px solid #248AE4;
+  border-left: none;
+  border-radius: 0 40px 40px 0;
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  padding: 0 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/icon-search.svg);
+}
+
+header .search .search-icon:hover {
+  background-color: rgba(36, 138, 228, 0.2);
+}
+
+#home {
+  color: white;
+  padding: 340px 70px 0 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#home .home-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-transform: uppercase;
+}
+
+#home .home-content h1 {
+  margin: 10px;
+  font-size: 9vw;
+  width: auto;
+  font-weight: 900;
+  line-height: 90px;
+}
+
+#home .home-content h2 {
+  margin: 0;
+  font-size: 5vw;
+  width: auto;
+  font-weight: 600;
+}
+
+#home .home-content p {
+  margin: 0;
+  margin-top: 30px;
+  font-size: 3vw;
+  width: auto;
+  font-weight: 100;
+}
+
+#home .home-content button {
+  margin-top: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  width: 200px;
+  height: 60px;
+  color: white;
+  font-family: Basic-sans;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#home .home-content button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#home .home-content button:focus {
+  outline: none;
+}
+
+#home .home-image {
+  position: absolute;
+  right: 40px;
+}
+
+#home .home-image img {
+  width: 600px;
+}
+
+#who {
+  padding: 500px 70px 0 70px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/background-section);
+  height: 1400px;
+  background-size: cover;
+  color: #8F8F8F;
+}
+
+#who img {
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */
